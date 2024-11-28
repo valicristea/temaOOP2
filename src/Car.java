@@ -8,6 +8,7 @@ public abstract class Car implements Vehicle {
     private String chassisNumber;
     private Float fuelConsumed;
     private Integer curentGear;
+    private Float drivenDistance;
     Car(String chassisNumber){
         this.chassisNumber = chassisNumber;
     }
@@ -16,6 +17,7 @@ public abstract class Car implements Vehicle {
     public void start(){
         fuelConsumed = 0f;
         curentGear = 1;
+        drivenDistance=0f;
 
     }
 
@@ -28,7 +30,8 @@ public abstract class Car implements Vehicle {
 
     @Override
     public void drive(Float km) {
-        fuelConsumed = fuelConsumed + (km * 100)/consumptionPer100Km;
+        fuelConsumed = fuelConsumed + km * (consumptionPer100Km/100);
+        drivenDistance = drivenDistance + km;
 
     }
 
@@ -38,5 +41,9 @@ public abstract class Car implements Vehicle {
 
     public Float getAvailableFuel() {
         return availableFuel;
+    }
+
+    public Float getAverageFuelConsumption(){
+        return fuelConsumed*100/drivenDistance;
     }
 }

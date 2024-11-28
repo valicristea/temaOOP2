@@ -43,10 +43,12 @@ public class Main {
         float availableFuel = car.getAvailableFuel();
 
         float fuelConsumedPer100Km = car.getAverageFuelConsumption();
+        System.out.println("The VW Passat:available fuel " + availableFuel +" fuelConsumedPer100km " + fuelConsumedPer100Km);
+        System.out.println("-----------------------------------------------------------");
 
 
 
-        Vehicle vehicle = new VWGolf(30, "1987ddkshik289"); // available fuel and chassis number
+        Vehicle vehicle = new VWGolf ( "1987ddkshik289", 16); // available fuel and chassis number
 
         vehicle.start();
 
@@ -54,11 +56,49 @@ public class Main {
 
         vehicle.stop();
 
-        Car car = (Car) vehicle;
+        Car car2 = (Car) vehicle;
 
-        float availableFuel = car.getAvailableFuel();
+        float availableFuel2 = car2.getAvailableFuel();
 
-        float fuelConsumedPer100Km = car.getAverageFuelConsumption();
+        float fuelConsumedPer100Km2 = car2.getAverageFuelConsumption();
+        System.out.println("The VW Golf:available fuel " + availableFuel2 +" fuelConsumedPer100km " + fuelConsumedPer100Km2);
+        System.out.println("-----------------------------------------------------------");
+
+
+
+        Vehicle vehicle = new MercedesEQA ( "xxxxxxxxxxxxxxxxx", 17); // available fuel and chassis number
+
+        vehicle.start();
+
+        vehicle.drive(17f);
+
+        vehicle.stop();
+
+        Car car3 = (Car) vehicle;
+
+        float availableFuel3 = car3.getAvailableFuel();
+
+        float fuelConsumedPer100Km3 = car3.getAverageFuelConsumption();
+        System.out.println("The VW Golf:available fuel " + availableFuel3 +" fuelConsumedPer100km " + fuelConsumedPer100Km3);
+        System.out.println("-----------------------------------------------------------");
+
+
+
+        Vehicle vehicle = new MercedesEQS( "ASASASAASASASASASAS", 18); // available fuel and chassis number
+
+        vehicle.start();
+
+        vehicle.drive(37f);
+
+        vehicle.stop();
+
+        Car car4 = (Car) vehicle;
+
+        float availableFuel4 = car4.getAvailableFuel();
+
+        float fuelConsumedPer100Km4 = car4.getAverageFuelConsumption();
+        System.out.println("The VW Golf:available fuel " + availableFuel4 +" fuelConsumedPer100km " + fuelConsumedPer100Km4);
+        System.out.println("-----------------------------------------------------------");
 
     }
 }
