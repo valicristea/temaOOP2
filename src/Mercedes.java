@@ -10,5 +10,6 @@ public abstract class Mercedes extends Car {
         this.fuelType = fuelType;
         this.gears = gears;
         this.consumptionPer100Km = consumptionPer100KM;
+        this.availableFuel = fuelTankSize.floatValue();
     }
 }

@@ -66,38 +66,38 @@ public class Main {
 
 
 
-        Vehicle vehicle = new MercedesEQA ( "xxxxxxxxxxxxxxxxx", 17); // available fuel and chassis number
+        Vehicle vehicle3 = new MercedesEQA ( "xxxxxxxxxxxxxxxxx", 17); // available fuel and chassis number
 
-        vehicle.start();
+        vehicle3.start();
 
-        vehicle.drive(17f);
+        vehicle3.drive(17f);
 
-        vehicle.stop();
+        vehicle3.stop();
 
-        Car car3 = (Car) vehicle;
+        Car car3 = (Car) vehicle3;
 
         float availableFuel3 = car3.getAvailableFuel();
 
         float fuelConsumedPer100Km3 = car3.getAverageFuelConsumption();
-        System.out.println("The VW Golf:available fuel " + availableFuel3 +" fuelConsumedPer100km " + fuelConsumedPer100Km3);
+        System.out.println("The Mercedes EQA:available fuel " + availableFuel3 +" fuelConsumedPer100km " + fuelConsumedPer100Km3);
         System.out.println("-----------------------------------------------------------");
 
 
 
-        Vehicle vehicle = new MercedesEQS( "ASASASAASASASASASAS", 18); // available fuel and chassis number
+        Vehicle vehicle2 = new MercedesEQS( "ASASASAASASASASASAS", 18); // available fuel and chassis number
 
-        vehicle.start();
+        vehicle2.start();
 
-        vehicle.drive(37f);
+        vehicle2.drive(37f);
 
-        vehicle.stop();
+        vehicle2.stop();
 
-        Car car4 = (Car) vehicle;
+        Car car4 = (Car) vehicle2;
 
         float availableFuel4 = car4.getAvailableFuel();
 
         float fuelConsumedPer100Km4 = car4.getAverageFuelConsumption();
-        System.out.println("The VW Golf:available fuel " + availableFuel4 +" fuelConsumedPer100km " + fuelConsumedPer100Km4);
+        System.out.println("The Mercedes EQS:available fuel " + availableFuel4 +" fuelConsumedPer100km " + fuelConsumedPer100Km4);
         System.out.println("-----------------------------------------------------------");
 
     }
